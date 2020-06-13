@@ -1,0 +1,73 @@
+body {
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+header{
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+  .slide img { 
+    filter: brightness(20%); 
+    background-size: cover; /** ajuste na tela LXC*/
+    width:100%;
+    height:100%;
+    justify-content: center; /** alinhamento centralizado */
+    align-items: center; /** alinhamento centralizado */
+  }
+
+  .menu {
+    position: fixed; /**cabeçalho fixo na tela */
+    width: 100vw;
+    top: 0; /**cabeçalho cola no topo*/
+    z-index: 1;
+  }
+
+  .menu img {
+    width: 190px;
+    height: 70px;
+  }
+  
+  .menu li {
+    list-style: none; /** sem pontos nas listas do menu*/
+  }
+  
+  .menu ul {
+    font-family: Times;
+    font-size: 20px;
+    display: flex; 
+    float: right; 
+    margin-top: 10px;
+    margin-right: 30px;/** espaçamento ao redor*/ 
+    }
+  
+  .menu a {
+    display: block;
+    position: right;
+    padding: 5px 10px;
+    color: white;
+    transition: background-color 5s, color 2s;
+  }
+  
+  .menu a:hover {
+    background-color: black;
+    color: white;
+  }
+
+  .sobre {
+    background: white;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .megafone {
+    width: 30%;
+    padding: 15px;
+    border: 1px solid white;
+    float: left;
+    margin-left: 15em;
+    height: 30%;
+  }
